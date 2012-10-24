@@ -1,0 +1,235 @@
+/* STRUCTURE */
+
+* { margin: 0; padding: 0; } /* mini reset */
+
+.full-size { /* force the element to be as big as the window */
+	width: 100%;
+	height: 100%;
+}
+
+.page-container {
+	font-size: 0; /* remove the white spaces between inline-block elements */ 
+}
+
+/* COLUMNS VERSION */
+/* 	1.1	2.1 3.1 */
+/* 	1.2	2.2 3.2 */
+/* 	1.3	2.3 3.3 */
+
+.columns body { 
+	white-space: nowrap; 	/* first half of magic */
+							/* disable the wrapping of the space between articles */
+}
+
+.columns .page {
+	display: inline-block;	/* second half of magic */
+							/* let the block elements stay on the same line */
+							/* used together the white-space: nowrap; declaration */
+							/* the elements doesn't break the line */
+	vertical-align: top; 	/* fix the default alignement for the inline-block elements (default: baseline) */
+	
+	font-size: 16px; /* reset the regular font size, in the old way… */
+	font-size: 1rem; /* and in the modern way */
+	*display: inline;	/* hack for inline-block for IE7 */
+	*zoom: 1;			/* hack for inline-block for IE7 */
+}
+
+/* ROWS VERSION */
+/* 	1.1	1.2 1.3 */
+/* 	2.1	2.2 2.3 */
+/* 	3.1	3.2 3.3 */
+
+.rows .page {
+	white-space: nowrap;	/* first half of magic */
+							/* disable the wrapping of the space between articles */
+}
+
+.rows .sub-page {
+	display: inline-block;	/* second half of magic */
+							/* let the block elements stay on the same line */
+							/* used together the white-space: nowrap; declaration */
+							/* the elements doesn't break the line */
+
+
+							
+	font-size: 16px; /* reset the regular font size, in the old way… */
+	font-size: 1rem; /* and in the modern way */
+	*display: inline;	/* hack for inline-block for IE7 */
+	*zoom: 1;			/* hack for inline-block for IE7 */
+}
+
+/* EYE CANDY */
+
+html {
+	background-color: #222222;
+}
+
+body {
+	font-family: "ChunkFiveRegular", serif;
+	color: #ffffff;
+	-webkit-text-shadow: 1px 1px 7px rgba(0,0,0,0.9);
+	   -moz-text-shadow: 1px 1px 7px rgba(0,0,0,0.9);
+	    -ms-text-shadow: 1px 1px 7px rgba(0,0,0,0.9);
+	     -o-text-shadow: 1px 1px 7px rgba(0,0,0,0.9);
+			text-shadow: 1px 1px 7px rgba(0,0,0,0.9);
+}
+
+.main-title {
+	font-size: 32px;
+	font-size: 2rem;
+	padding: 2% 3%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+.sub-page {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed, fixed, fixed;
+	background-size: 100% 100%, contain, contain;
+}
+
+.page1 .sub-page1 { background-color: rgba(220,0,0,1.0); 		background-image: url(../img/halo.png), url(../img/1.png), url(../img/_1.png); }
+.page1 .sub-page2 { background-color: rgba(220,0,0,0.9); 		background-image: url(../img/halo.png), url(../img/1.png), url(../img/_2.png); }
+.page1 .sub-page3 { background-color: rgba(220,0,0,0.8); 		background-image: url(../img/halo.png), url(../img/1.png), url(../img/_3.png); }
+.page1 .sub-page4 { background-color: rgba(220,0,0,0.7); 		background-image: url(../img/halo.png), url(../img/1.png), url(../img/_4.png); }
+.page1 .sub-page5 { background-color: rgba(220,0,0,0.6); 		background-image: url(../img/halo.png), url(../img/1.png), url(../img/_5.png); }
+.page1 .sub-page6 { background-color: rgba(220,0,0,0.5); 		background-image: url(../img/halo.png), url(../img/1.png), url(../img/_6.png); }
+.page1 .sub-page7 { background-color: rgba(220,0,0,0.4); 		background-image: url(../img/halo.png), url(../img/1.png), url(../img/_7.png); }
+.page1 .sub-page8 { background-color: rgba(220,0,0,0.3); 		background-image: url(../img/halo.png), url(../img/1.png), url(../img/_8.png); }
+.page1 .sub-page9 { background-color: rgba(220,0,0,0.2); 		background-image: url(../img/halo.png), url(../img/1.png), url(../img/_9.png); }
+
+.page2 .sub-page1 { background-color: rgba(190,0,150,1.0); 		background-image: url(../img/halo.png), url(../img/2.png), url(../img/_1.png); }
+.page2 .sub-page2 { background-color: rgba(190,0,150,0.9); 		background-image: url(../img/halo.png), url(../img/2.png), url(../img/_2.png); }
+.page2 .sub-page3 { background-color: rgba(190,0,150,0.8); 		background-image: url(../img/halo.png), url(../img/2.png), url(../img/_3.png); }
+.page2 .sub-page4 { background-color: rgba(190,0,150,0.7); 		background-image: url(../img/halo.png), url(../img/2.png), url(../img/_4.png); }
+.page2 .sub-page5 { background-color: rgba(190,0,150,0.6); 		background-image: url(../img/halo.png), url(../img/2.png), url(../img/_5.png); }
+.page2 .sub-page6 { background-color: rgba(190,0,150,0.5); 		background-image: url(../img/halo.png), url(../img/2.png), url(../img/_6.png); }
+.page2 .sub-page7 { background-color: rgba(190,0,150,0.4); 		background-image: url(../img/halo.png), url(../img/2.png), url(../img/_7.png); }
+.page2 .sub-page8 { background-color: rgba(190,0,150,0.3); 		background-image: url(../img/halo.png), url(../img/2.png), url(../img/_8.png); }
+.page2 .sub-page9 { background-color: rgba(190,0,150,0.2); 		background-image: url(../img/halo.png), url(../img/2.png), url(../img/_9.png); }
+
+.page3 .sub-page1 { background-color: rgba(120,0,200,1.0); 		background-image: url(../img/halo.png), url(../img/3.png), url(../img/_1.png); }
+.page3 .sub-page2 { background-color: rgba(120,0,200,0.9); 		background-image: url(../img/halo.png), url(../img/3.png), url(../img/_2.png); }
+.page3 .sub-page3 { background-color: rgba(120,0,200,0.8); 		background-image: url(../img/halo.png), url(../img/3.png), url(../img/_3.png); }
+.page3 .sub-page4 { background-color: rgba(120,0,200,0.7); 		background-image: url(../img/halo.png), url(../img/3.png), url(../img/_4.png); }
+.page3 .sub-page5 { background-color: rgba(120,0,200,0.6); 		background-image: url(../img/halo.png), url(../img/3.png), url(../img/_5.png); }
+.page3 .sub-page6 { background-color: rgba(120,0,200,0.5); 		background-image: url(../img/halo.png), url(../img/3.png), url(../img/_6.png); }
+.page3 .sub-page7 { background-color: rgba(120,0,200,0.4); 		background-image: url(../img/halo.png), url(../img/3.png), url(../img/_7.png); }
+.page3 .sub-page8 { background-color: rgba(120,0,200,0.3); 		background-image: url(../img/halo.png), url(../img/3.png), url(../img/_8.png); }
+.page3 .sub-page9 { background-color: rgba(120,0,200,0.2); 		background-image: url(../img/halo.png), url(../img/3.png), url(../img/_9.png); }
+
+.page4 .sub-page1 { background-color: rgba(0,0,180,1.0); 		background-image: url(../img/halo.png), url(../img/4.png), url(../img/_1.png); }
+.page4 .sub-page2 { background-color: rgba(0,0,180,0.9); 		background-image: url(../img/halo.png), url(../img/4.png), url(../img/_2.png); }
+.page4 .sub-page3 { background-color: rgba(0,0,180,0.8); 		background-image: url(../img/halo.png), url(../img/4.png), url(../img/_3.png); }
+.page4 .sub-page4 { background-color: rgba(0,0,180,0.7); 		background-image: url(../img/halo.png), url(../img/4.png), url(../img/_4.png); }
+.page4 .sub-page5 { background-color: rgba(0,0,180,0.6); 		background-image: url(../img/halo.png), url(../img/4.png), url(../img/_5.png); }
+.page4 .sub-page6 { background-color: rgba(0,0,180,0.5); 		background-image: url(../img/halo.png), url(../img/4.png), url(../img/_6.png); }
+.page4 .sub-page7 { background-color: rgba(0,0,180,0.4); 		background-image: url(../img/halo.png), url(../img/4.png), url(../img/_7.png); }
+.page4 .sub-page8 { background-color: rgba(0,0,180,0.3); 		background-image: url(../img/halo.png), url(../img/4.png), url(../img/_8.png); }
+.page4 .sub-page9 { background-color: rgba(0,0,180,0.2); 		background-image: url(../img/halo.png), url(../img/4.png), url(../img/_9.png); }
+
+.page5 .sub-page1 { background-color: rgba(0,150,190,1.0); 		background-image: url(../img/halo.png), url(../img/5.png), url(../img/_1.png); }
+.page5 .sub-page2 { background-color: rgba(0,150,190,0.9); 		background-image: url(../img/halo.png), url(../img/5.png), url(../img/_2.png); }
+.page5 .sub-page3 { background-color: rgba(0,150,190,0.8); 		background-image: url(../img/halo.png), url(../img/5.png), url(../img/_3.png); }
+.page5 .sub-page4 { background-color: rgba(0,150,190,0.7); 		background-image: url(../img/halo.png), url(../img/5.png), url(../img/_4.png); }
+.page5 .sub-page5 { background-color: rgba(0,150,190,0.6); 		background-image: url(../img/halo.png), url(../img/5.png), url(../img/_5.png); }
+.page5 .sub-page6 { background-color: rgba(0,150,190,0.5); 		background-image: url(../img/halo.png), url(../img/5.png), url(../img/_6.png); }
+.page5 .sub-page7 { background-color: rgba(0,150,190,0.4); 		background-image: url(../img/halo.png), url(../img/5.png), url(../img/_7.png); }
+.page5 .sub-page8 { background-color: rgba(0,150,190,0.3); 		background-image: url(../img/halo.png), url(../img/5.png), url(../img/_8.png); }
+.page5 .sub-page9 { background-color: rgba(0,150,190,0.2); 		background-image: url(../img/halo.png), url(../img/5.png), url(../img/_9.png); }
+
+.page6 .sub-page1 { background-color: rgba(0,190,130,1.0); 		background-image: url(../img/halo.png), url(../img/6.png), url(../img/_1.png); }
+.page6 .sub-page2 { background-color: rgba(0,190,130,0.9); 		background-image: url(../img/halo.png), url(../img/6.png), url(../img/_2.png); }
+.page6 .sub-page3 { background-color: rgba(0,190,130,0.8); 		background-image: url(../img/halo.png), url(../img/6.png), url(../img/_3.png); }
+.page6 .sub-page4 { background-color: rgba(0,190,130,0.7); 		background-image: url(../img/halo.png), url(../img/6.png), url(../img/_4.png); }
+.page6 .sub-page5 { background-color: rgba(0,190,130,0.6); 		background-image: url(../img/halo.png), url(../img/6.png), url(../img/_5.png); }
+.page6 .sub-page6 { background-color: rgba(0,190,130,0.5); 		background-image: url(../img/halo.png), url(../img/6.png), url(../img/_6.png); }
+.page6 .sub-page7 { background-color: rgba(0,190,130,0.4); 		background-image: url(../img/halo.png), url(../img/6.png), url(../img/_7.png); }
+.page6 .sub-page8 { background-color: rgba(0,190,130,0.3); 		background-image: url(../img/halo.png), url(../img/6.png), url(../img/_8.png); }
+.page6 .sub-page9 { background-color: rgba(0,190,130,0.2); 		background-image: url(../img/halo.png), url(../img/6.png), url(../img/_9.png); }
+
+.page7 .sub-page1 { background-color: rgba(0,190,0,1.0); 		background-image: url(../img/halo.png), url(../img/7.png), url(../img/_1.png); }
+.page7 .sub-page2 { background-color: rgba(0,190,0,0.9); 		background-image: url(../img/halo.png), url(../img/7.png), url(../img/_2.png); }
+.page7 .sub-page3 { background-color: rgba(0,190,0,0.8); 		background-image: url(../img/halo.png), url(../img/7.png), url(../img/_3.png); }
+.page7 .sub-page4 { background-color: rgba(0,190,0,0.7); 		background-image: url(../img/halo.png), url(../img/7.png), url(../img/_4.png); }
+.page7 .sub-page5 { background-color: rgba(0,190,0,0.6); 		background-image: url(../img/halo.png), url(../img/7.png), url(../img/_5.png); }
+.page7 .sub-page6 { background-color: rgba(0,190,0,0.5); 		background-image: url(../img/halo.png), url(../img/7.png), url(../img/_6.png); }
+.page7 .sub-page7 { background-color: rgba(0,190,0,0.4); 		background-image: url(../img/halo.png), url(../img/7.png), url(../img/_7.png); }
+.page7 .sub-page8 { background-color: rgba(0,190,0,0.3); 		background-image: url(../img/halo.png), url(../img/7.png), url(../img/_8.png); }
+.page7 .sub-page9 { background-color: rgba(0,190,0,0.2); 		background-image: url(../img/halo.png), url(../img/7.png), url(../img/_9.png); }
+
+.page8 .sub-page1 { background-color: rgba(180,220,0,1.0); 		background-image: url(../img/halo.png), url(../img/8.png), url(../img/_1.png); }
+.page8 .sub-page2 { background-color: rgba(180,220,0,0.9); 		background-image: url(../img/halo.png), url(../img/8.png), url(../img/_2.png); }
+.page8 .sub-page3 { background-color: rgba(180,220,0,0.8); 		background-image: url(../img/halo.png), url(../img/8.png), url(../img/_3.png); }
+.page8 .sub-page4 { background-color: rgba(180,220,0,0.7); 		background-image: url(../img/halo.png), url(../img/8.png), url(../img/_4.png); }
+.page8 .sub-page5 { background-color: rgba(180,220,0,0.6); 		background-image: url(../img/halo.png), url(../img/8.png), url(../img/_5.png); }
+.page8 .sub-page6 { background-color: rgba(180,220,0,0.5); 		background-image: url(../img/halo.png), url(../img/8.png), url(../img/_6.png); }
+.page8 .sub-page7 { background-color: rgba(180,220,0,0.4); 		background-image: url(../img/halo.png), url(../img/8.png), url(../img/_7.png); }
+.page8 .sub-page8 { background-color: rgba(180,220,0,0.3); 		background-image: url(../img/halo.png), url(../img/8.png), url(../img/_8.png); }
+.page8 .sub-page9 { background-color: rgba(180,220,0,0.2); 		background-image: url(../img/halo.png), url(../img/8.png), url(../img/_9.png); }
+
+.page9 .sub-page1 { background-color: rgba(255,160,0,1.0); 		background-image: url(../img/halo.png), url(../img/9.png), url(../img/_1.png); }
+.page9 .sub-page2 { background-color: rgba(255,160,0,0.9); 		background-image: url(../img/halo.png), url(../img/9.png), url(../img/_2.png); }
+.page9 .sub-page3 { background-color: rgba(255,160,0,0.8); 		background-image: url(../img/halo.png), url(../img/9.png), url(../img/_3.png); }
+.page9 .sub-page4 { background-color: rgba(255,160,0,0.7); 		background-image: url(../img/halo.png), url(../img/9.png), url(../img/_4.png); }
+.page9 .sub-page5 { background-color: rgba(255,160,0,0.6); 		background-image: url(../img/halo.png), url(../img/9.png), url(../img/_5.png); }
+.page9 .sub-page6 { background-color: rgba(255,160,0,0.5); 		background-image: url(../img/halo.png), url(../img/9.png), url(../img/_6.png); }
+.page9 .sub-page7 { background-color: rgba(255,160,0,0.4); 		background-image: url(../img/halo.png), url(../img/9.png), url(../img/_7.png); }
+.page9 .sub-page8 { background-color: rgba(255,160,0,0.3); 		background-image: url(../img/halo.png), url(../img/9.png), url(../img/_8.png); }
+.page9 .sub-page9 { background-color: rgba(255,160,0,0.2); 		background-image: url(../img/halo.png), url(../img/9.png), url(../img/_9.png); }
+ 
+h1 {
+	font-size: 32px;
+	font-size: 2rem;
+	letter-spacing: 0.05em;
+	padding: 2% 3%;
+}
+
+/* DEMO LOGIC */
+
+.controller {
+	text-align: right;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 100;
+	background-color: #222222;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.controller p, .controller .form-element {
+	margin: 10px;
+}
+
+.controller select {
+	min-width: 3em;
+}
+
+.credits {
+	font-family: Verdana, sans-serif;
+	text-align: right;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 100;
+	background-color: #222222;
+	background-color: rgba(0,0,0,0.5);
+}
+
+/* CREDITS */
+
+.credits p {
+	font-size: 0.8em;
+	margin: 0.6em;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+	color: #7cb2ee;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
