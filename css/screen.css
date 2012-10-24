@@ -191,6 +191,7 @@ h1 {
 
 .controller {
 	text-align: right;
+	padding-right: 150px;
 	position: fixed;
 	top: 0;
 	right: 0;
