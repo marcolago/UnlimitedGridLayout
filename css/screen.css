@@ -1,6 +1,6 @@
-/* STRUCTURE */
+* { margin: 0; padding: 0; outline: 0;} /* mini reset */
 
-* { margin: 0; padding: 0; } /* mini reset */
+/* STRUCTURE */
 
 .full-size { /* force the element to be as big as the window */
 	width: 100%;
