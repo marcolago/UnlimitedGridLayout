@@ -27,6 +27,7 @@ Considering that a demo is worth more than 1000 words let’s see two implementa
 - The CSS is fully commented so you can take a look directly at the code to discover the tricks. The CSS is separated in tree parts; only the first part, the structure, is really important for our scopes; the second part, the eye candy, is for the beauty side of the demo; and the last one, the demo logic, it’s only to dress the control panel and the credits.
 
 Demo ordered by columns: http://marcolago.com/absolide/demo/unlimited-grid-layout/columns.html
+
 Demo ordered by rows: http://marcolago.com/absolide/demo/unlimited-grid-layout/rows.html
 
 Do you like it? I hope you do.
