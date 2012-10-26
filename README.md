@@ -26,6 +26,9 @@ Considering that a demo is worth more than 1000 words let’s see two implementa
 - The demo uses text-shadow and multiple backgrounds properties only for presentation purpose, so I’ve build the demo on graceful degradation concepts: in IE you can’t see any shadow on text and in IE 8 or less you can’t even see any background image or background colour but you can still explore the functionality of the boilerplate with the base grid; even in IE 7.
 - The CSS is fully commented so you can take a look directly at the code to discover the tricks. The CSS is separated in tree parts; only the first part, the structure, is really important for our scopes; the second part, the eye candy, is for the beauty side of the demo; and the last one, the demo logic, it’s only to dress the control panel and the credits.
 
+Demo ordered by columns: http://marcolago.com/absolide/demo/unlimited-grid-layout/columns.html
+Demo ordered by rows: http://marcolago.com/absolide/demo/unlimited-grid-layout/rows.html
+
 Do you like it? I hope you do.
 Feel free to experiment with the code and use it in production if you feel comfortable with it. If anyone makes a website or a webapp based on this boilerplate, please, let me know; I will appreciate.
 
