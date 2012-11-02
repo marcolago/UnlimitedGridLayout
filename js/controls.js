@@ -1,6 +1,6 @@
 var pages;
-		var pageTemplate = '<section class="page page%%n%% full-size"><section>';
-		var subPageTemplate = '<article class="sub-page sub-page%%n%% full-size"><h1 class="page-title">Section %%p%% / Article %%n%%</h1></article>';
+		var pageTemplate = '<div class="page page%%n%% full-size"><div>';
+		var subPageTemplate = '<div class="sub-page sub-page%%n%% full-size"><h1 class="page-title">Section %%p%% / Article %%n%%</h1></div>';
 			
 		var pageContainer = document.querySelector(".page-container");
 		var cc = document.querySelector("#page-count");
