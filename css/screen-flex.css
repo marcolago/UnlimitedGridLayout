@@ -20,7 +20,6 @@
 	display: -webkit-flex;
 	display:    -moz-flex;
 	display:     -ms-flex;
-	display:      -o-flex;
 	display:         flex;
 	/**
 	 * flex-flow: row nowrap; propery avoid the wrapping of the child elements
@@ -32,19 +31,18 @@
 	-webkit-flex-flow: row nowrap;
 	   -moz-flex-flow: row nowrap;
 	    -ms-flex-flow: row nowrap;
-	     -o-flex-flow: row nowrap;
 	        flex-flow: row nowrap;
 }
 
 .columns .page {
-	/** 
-	 * this declaration override the default behaviour of flexbox children
-	 * allowing every child to be wide as needed
-	 * (in this case as much the container)
-	 * instead of a portion of the parent
-	 * see Flex Box Layout Module Specification: http://www.w3.org/TR/css3-flexbox/
+	/**
+	 * sets the flex flex-grow and flex-shrink values to 0
+	 * so the available space is not divided from flex elements
+	 * and the flex-basis value of the size on the main axis to 100%
+	 * so the boxes are wide as the container (100%)
 	 */
-	min-width: 100%;
+	-webkit-flex: 0 0 100%;
+	        flex: 0 0 100%;
 }
 
 /* ROWS VERSION */
@@ -60,7 +58,6 @@
 	display: -webkit-flex;
 	display:    -moz-flex;
 	display:     -ms-flex;
-	display:      -o-flex;
 	display:         flex;
 	/**
 	 * flex-flow: row nowrap; propery avoid the wrapping of the child elements
@@ -72,19 +69,18 @@
 	-webkit-flex-flow: row nowrap;
 	   -moz-flex-flow: row nowrap;
 	    -ms-flex-flow: row nowrap;
-	     -o-flex-flow: row nowrap;
 	        flex-flow: row nowrap;
 }
 
 .rows .sub-page {
-	/** 
-	 * this declaration override the default behaviour of flexbox children
-	 * allowing every child to be wide as needed
-	 * (in this case as much the container)
-	 * instead of a portion of the parent
-	 * see Flex Box Layout Module Specification: http://www.w3.org/TR/css3-flexbox/
+	/**
+	 * sets the flex flex-grow and flex-shrink values to 0
+	 * so the available space is not divided from flex elements
+	 * and the flex-basis value of the size on the main axis to 100%
+	 * so the boxes are wide as the container (100%)
 	 */
-	min-width: 100%;
+	-webkit-flex: 0 0 100%;
+	        flex: 0 0 100%;
 }
 
 /* EYE CANDY */
@@ -99,7 +95,6 @@ body {
 	-webkit-text-shadow: 1px 1px 7px rgba(0,0,0,0.9);
 	   -moz-text-shadow: 1px 1px 7px rgba(0,0,0,0.9);
 	    -ms-text-shadow: 1px 1px 7px rgba(0,0,0,0.9);
-	     -o-text-shadow: 1px 1px 7px rgba(0,0,0,0.9);
 			text-shadow: 1px 1px 7px rgba(0,0,0,0.9);
 }
 
