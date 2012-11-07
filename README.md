@@ -33,8 +33,18 @@ Demo ordered by rows: http://marcolago.com/absolide/demo/unlimited-grid-layout/r
 Do you like it? I hope you do.
 Feel free to experiment with the code and use it in production if you feel comfortable with it. If anyone makes a website or a webapp based on this boilerplate, please, let me know; I will appreciate.
 
-Just one thing.
-The “a” in the version number (1.0a) means that there will be also a “b” version that achieve the same result using not the inline-block display property but the, less supported at now, flexible box layout model.
-This second demo will not be more complex than that one, but the changes in the flexbox and the lack of a solid support from browsers mades me delay this version.
+
+UPDATE - FlexBox Version
+========================
+
+Updated code and demos with the FlexBox (current syntax) implementation.
+
+More info on the implementation on: http://absolide.tumblr.com/post/34943657374/unlimited-grid-layout-now-with-flexbox-flavour
+
+Demo ordered by columns: http://marcolago.com/absolide/demo/unlimited-grid-layout/columns-flex.html
+
+Demo ordered by rows: http://marcolago.com/absolide/demo/unlimited-grid-layout/rows-flex.html
+
+
 
 Have fun, stay tuned and let me know
