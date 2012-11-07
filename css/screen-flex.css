@@ -23,14 +23,17 @@
 	display:      -o-flex;
 	display:         flex;
 	/**
-	 * flex-flow: row; propery avoid the wrapping of the child elements
+	 * flex-flow: row nowrap; propery avoid the wrapping of the child elements
 	 * when they are wider than the container
+	 * flex-flow is a shorthand for
+	 * flex-direction: row;
+	 * flex-wrap: nowrap;
 	 */
-	-webkit-flex-flow: row;
-	   -moz-flex-flow: row;
-	    -ms-flex-flow: row;
-	     -o-flex-flow: row;
-	        flex-flow: row;
+	-webkit-flex-flow: row nowrap;
+	   -moz-flex-flow: row nowrap;
+	    -ms-flex-flow: row nowrap;
+	     -o-flex-flow: row nowrap;
+	        flex-flow: row nowrap;
 }
 
 .columns .page {
@@ -60,14 +63,17 @@
 	display:      -o-flex;
 	display:         flex;
 	/**
-	 * flex-flow: row; propery avoid the wrapping of the child elements
+	 * flex-flow: row nowrap; propery avoid the wrapping of the child elements
 	 * when they are wider than the container
+	 * flex-flow is a shorthand for
+	 * flex-direction: row;
+	 * flex-wrap: nowrap;
 	 */
-	-webkit-flex-flow: row;
-	   -moz-flex-flow: row;
-	    -ms-flex-flow: row;
-	     -o-flex-flow: row;
-	        flex-flow: row;
+	-webkit-flex-flow: row nowrap;
+	   -moz-flex-flow: row nowrap;
+	    -ms-flex-flow: row nowrap;
+	     -o-flex-flow: row nowrap;
+	        flex-flow: row nowrap;
 }
 
 .rows .sub-page {
