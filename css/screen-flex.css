@@ -42,6 +42,8 @@
 	 * so the boxes are wide as the container (100%)
 	 */
 	-webkit-flex: 0 0 100%;
+	   -moz-flex: 0 0 100%;
+	    -ms-flex: 0 0 100%;
 	        flex: 0 0 100%;
 }
 
@@ -80,6 +82,8 @@
 	 * so the boxes are wide as the container (100%)
 	 */
 	-webkit-flex: 0 0 100%;
+	   -moz-flex: 0 0 100%;
+	    -ms-flex: 0 0 100%;
 	        flex: 0 0 100%;
 }
 
